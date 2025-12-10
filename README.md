@@ -29,14 +29,12 @@
 
 ## 🛠 기술 스택 (Tech Stack)
 
-이 프로젝트는 **Next.js**를 기반으로 하며, 별도의 외부 데이터베이스 서버(RDS 등) 없이 **로컬 파일 기반 데이터베이스(SQLite)**를 사용하여 비용 효율성을 극대화합니다.
+이 프로젝트는 **Next.js**를 기반으로 하며, 별도의 외부 데이터베이스 서버(RDS 등) 없이 **로컬 파일 기반 데이터베이스**를 사용하여 비용 효율성을 극대화합니다.
 
 - **Framework**: [Next.js](https://nextjs.org/) (App Router, SSR)
 - **Language**: TypeScript / JavaScript
 - **Styling**: Vanilla CSS (Premium & Dynamic Design)
-- **Database**: SQLite (In-project file storage for cost efficiency)
 - **Deployment**: AWS Amplify
-- **ORM**: Prisma (Recommended for schema management with SQLite)
 
 ---
 
@@ -77,6 +75,7 @@
     - 개발: `#JSON`, `#Regex`
     - 디자인: `#Color`, `#Fonts`
     - 게임: `#Web Game`, `#IO Game`
+    - etc.
 
 ---
 
@@ -126,16 +125,7 @@ npm install
 npm run dev
 ```
 
-### 3. 데이터베이스 설정 (Prisma 사용 시)
-```bash
-# 스키마 적용
-npx prisma db push
-
-# 프리즈마 스튜디오 실행 (데이터 관리)
-npx prisma studio
-```
-
-### 4. 프로덕션 빌드
+### 3. 프로덕션 빌드
 ```bash
 npm run build
 npm start
